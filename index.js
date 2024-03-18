@@ -16,7 +16,7 @@ const limiter = rateLimit({
 
 app.use(morgan('combined'));
 app.use(limiter);
-app.use('/', async (req,res,next) => {
+app.use('/bookingservice', async (req,res,next) => {
 
    try {
      
